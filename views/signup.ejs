@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/signup.css">
+  <title>Signup</title>
+</head>
+<body>
+  <link href="signup.css" rel="stylesheet" type="text/css" />
+  <form action="/user" method="post">
+    <div class="body">
+      <div class="container">
+        <form>
+          <div class="head">
+            <span>Sign up</span>
+            <p>Create a account.</p>
+          </div>
+          <div class="inputs">
+            <input type="text" placeholder="Full Name" required name="name">
+            <input type="email" placeholder="Email " required name="email">
+            <input type="password" placeholder="Password" required name="password">
+          </div>
+          <button>Sign up</button>
+        </form>
+        <div class="form-footer">
+          <p>Have an account? <a href="#">Log in</a></p>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
