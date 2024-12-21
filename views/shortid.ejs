@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shortened URL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        section {
+            background: #fff;
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+        }
+
+        section p {
+            font-size: 1.3em;
+            color: #555;
+        }
+
+        section a {
+            font-size: 1.5em;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Your Shortened URL</h1>
+    </header>
+
+    <section>
+        <p>Here is your shortened link:</p>
+        <a href="<%= shortUrl %>" target="_blank">
+            <%= shortUrl %>
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 URL Shortener. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
